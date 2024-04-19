@@ -1,9 +1,9 @@
 /* script javascript gestion carroussel */
 
 for (i=0;i<nb_slides;i++){
-    let seleced
+    let selected
     selected=(i===0)?true:false
-    document.querySelector("div [class=dots]").appendChild(add_dot(selected))
+    document.querySelector("div [class=dots]").appendChild(add_dot(selected,i))
 }
 
 bt_next.addEventListener("click", function () {
@@ -20,3 +20,4 @@ bt_back.addEventListener("click", function () {
     change_img(slides[idx_slide])
     change_dot(idx_slide,old_slide)
 });
+

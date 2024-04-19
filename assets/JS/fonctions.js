@@ -1,9 +1,20 @@
 
-function add_dot(selsected){
+function add_dot(selected, cpt){
     let dot=document.createElement("span")
     dot.classList.add("dot")
     if(selected)dot.classList.add("dot_selected")
+    dot.setAttribute("id",`dot_${cpt}`)
+    Evt_dots.push(dot.addEventListener("click", function (e) {
+        GestEvtDot(e.target.getAttribute("id").split('_')[1]*1);
+        })
+    )
     return dot
+}
+
+function GestEvtDot(idx){
+    change_img(slides[idx])
+    change_dot(idx,idx_slide)
+    idx_slide=idx
 }
 
 function change_dot(sel, old){

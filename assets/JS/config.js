@@ -25,3 +25,5 @@ const bt_back = document.getElementById("bt_back")
 
 /* index image affichée */
 let idx_slide=0
+let Evt_dots=[]
+

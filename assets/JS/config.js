@@ -16,3 +16,12 @@ const slides = [
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ]
+
+
+const nb_slides=slides.length
+
+const bt_next = document.getElementById("bt_next")
+const bt_back = document.getElementById("bt_back")
+
+/* index image affichée */
+let idx_slide=0

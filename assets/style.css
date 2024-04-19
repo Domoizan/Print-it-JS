@@ -53,8 +53,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-body {
 
+body {
+	box-sizing: border-box;
 }
 section {
 	margin-block: 6em;
@@ -145,7 +146,7 @@ header {
 	background-color: #ffffff00;
 	border: 3px solid #fff;
 	border-radius: 100%;
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .dot_selected {
 	background-color: #fff;

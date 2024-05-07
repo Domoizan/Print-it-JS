@@ -4,9 +4,9 @@ function add_dot(selected, cpt){
     dot.classList.add("dot")
     if(selected)dot.classList.add("dot_selected")
     dot.setAttribute("id",`dot_${cpt}`)
-    Evt_dots.push(dot.addEventListener("click", function (e) {
+    dot.addEventListener("click", function (e) {
         GestEvtDot(e.target.getAttribute("id").split('_')[1]*1);
-        })
+        }
     )
     return dot
 }
